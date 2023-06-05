@@ -2,7 +2,7 @@
 
 DDOS BotNet for telegram, just make differents version of this bot with differents telegram token (in .env file pls).
 
-And host it ! (I use [https://glitch.com/dashboard] GLITCH)
+And host it ! (I use [GLITCH](https://glitch.com/dashboard) )
 <br><br>
 ## How use it ?
 
