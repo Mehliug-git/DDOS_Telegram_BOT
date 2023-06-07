@@ -15,6 +15,12 @@ In the shell of your hosting server make this config command :
 
 <br><br>
 
+Now hit the URL of the bot for start (only if your hosting sleep your project in free mode like Glitch), you can also make a bot for start all other bot. 
+
+
 The installation tutorial is not finished, if you have any problems I can help you.
+
+
+* In my Botnet I have actually 18 bots, I can go up to 260 000 requests /s  *
 
 ### Just for educational purpose only, Do, what you want I don’t give a fuck, but it’s not my fault you’re in trouble.
