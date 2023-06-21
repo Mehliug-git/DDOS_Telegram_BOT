@@ -19,6 +19,9 @@ Now hit the URL of the bot for start (only if your hosting sleep your project in
 The installation tutorial is not finished, if you have any problems I can help you.
 
 
+[+] NEW ! You can now upgrade your requests/s using my [https://github.com/Mehliug-git/DDOS_Booster](DDOS BOOSTER !) It's just a DDOS bot without Telegram, just get a URL and start DDOS !     
+
+
 **In my Botnet I have actually 18 bots, I can go up to 260 000 requests /s**
 <br><br>
 
