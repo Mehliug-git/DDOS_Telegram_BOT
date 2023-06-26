@@ -22,7 +22,7 @@ The installation tutorial is not finished, if you have any problems I can help y
 [+] NEW ! You can now upgrade your requests/s using my [DDOS BOOSTER !](https://github.com/Mehliug-git/DDOS_Booster) It's just a DDOS bot without Telegram, just get a URL and start DDOS !     
 [+] NEW ! : If you just want to test your infrastrucutre open me an Issue and have done this together !!
 
-**In my Botnet I have actually 18 bots, I can go up to 260 000 requests /s**
+**In my Botnet I have actually 70 bots, I can go up to ~ 430 000 requests /s**
 <br><br>
 
 ### Just for educational purpose only, Do, what you want I don’t give a fuck, but it’s not my fault you’re in trouble.
