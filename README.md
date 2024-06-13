@@ -27,3 +27,5 @@ The installation tutorial is not finished, if you have any problems I can help y
 <br><br>
 
 ### Just for educational purpose only, Do, what you want I don’t give a fuck, but it’s not my fault you’re in trouble.
+
+### STOP OPENING ISSUES FOR SHIT
